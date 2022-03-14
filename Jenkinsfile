@@ -3,11 +3,11 @@ pipeline {
 
   stages {
     stage('Install') {
-      steps { sh '/usr/bin/npm install' }
+      steps { sh 'npm install' }
     }
 
     stage('Build') {
-      steps { sh '/usr/bin/npm run-script build' }
+      steps { sh 'npm run-script build' }
     }
   }
 }
